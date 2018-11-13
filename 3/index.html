@@ -11,56 +11,94 @@
 
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <h1> Hey !! </h1>
-    <section class="section-1">
-      <h1> Hey </h1>
-      <span class="counter"> 101 </span>
-      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-    </section>
 
-    <table>
-      <tbody>
-        <tr class="row" id="row-1">
-          <td> 1 </td>
-          <td> 1 </td>
-          <td> 1 </td>
-        </tr>
+<head>
+  <meta charset="utf-8">
 
-        <tr class="row" id="row-2">
-          <td> 2 </td>
-          <td> 2 </td>
-          <td> 2 </td>
-        </tr>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
 
-        <tr class="row" id="row-3">
-          <td> 3 </td>
-          <td> 3 </td>
-          <td> 3 </td>
-        </tr>
+  <title></title>
 
-        <tr class="row" id="row-4">
-          <td> 4 </td>
-          <td> 4 </td>
-          <td> 4 </td>
-        </tr>
+</head>
 
-      </tbody>
-    </table>
+<body>
 
-    <form class="" action="index.html" method="post">
-      <fieldset>
-        <label for="email"> Email: </label>
-        <input type="text" name="email" value="x@xyz.com">
+  <h1> Hey !! </h1>
 
-        <label for="name"> Name: </label>
-        <input type="text" name="name" value="x@xyz.com">
 
-      </fieldset>
-    </form>
-  </body>
+  <section class="section-1">
+    <h1> Hey </h1>
+    <script>
+      $('h1')
+      $('h1').css('font-size', var * 2 + 'em')
+    </script>
+    <span class="counter"> 101 </span>
+    <script>
+      $('.counter').click(function () {
+        counter = $('.counter').text();
+        counter = parseInt(counter);
+        $('.counter').text(counter + 10);
+      })
+    </script>
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </section>
+  <script>
+    $('.section-1').css('background-color', 'yellow');
+  </script>
+
+
+  <table>
+    <tbody>
+      <tr class="row" id="row-1">
+        <td> 1 </td>
+        <td> 1 </td>
+        <td> 1 </td>
+      </tr>
+
+      <tr class="row" id="row-2">
+        <td> 2 </td>
+        <td> 2 </td>
+        <td> 2 </td>
+      </tr>
+
+      <tr class="row" id="row-3">
+        <td> 3 </td>
+        <td> 3 </td>
+        <td> 3 </td>
+      </tr>
+
+      <script>
+        $('#row-3').on('click', function () {
+          $('#row-3').css('background-color', 'grey');
+          $('#row-3').css('transition', '1s')
+        })
+      </script>
+      <tr class="row" id="row-4">
+        <td> 4 </td>
+        <td> 4 </td>
+        <td> 4 </td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <form class="" action="index.html" method="post">
+    <fieldset>
+      <label for="email"> Email: </label>
+      <input type="text" name="email" value="x@xyz.com">
+
+      <label for="name"> Name: </label>
+      <input type="text" name="name" value="x@xyz.com">
+
+    </fieldset>
+  </form>
+</body>
+<script>
+  $('h1').css('color', 'red');
+</script>
+
 </html>
